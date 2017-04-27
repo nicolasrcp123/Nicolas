@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-	int f,c;
+	float f,c;
 	cout<<"Tabla de Fahrenheit a Celsius"<<endl;
 	for(f=0;f<=300;f+=20){
 		c = (f-32)*5/9;
