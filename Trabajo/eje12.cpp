@@ -2,7 +2,9 @@
 #include<conio.h>
 
 using namespace std;
-
+void crear_arreglo(int array[],const int longth);
+void invertir( int array[],const int longth);
+void imprimir(int array[],const int longth);
 void invertir( int array[],const int longth){
     for(int i=0;i<(longth/2);i++){
         int temp;
@@ -40,4 +42,3 @@ int main()
     return 0;
 
 }
-
