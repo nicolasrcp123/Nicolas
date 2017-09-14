@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+function Restar(a, b) { return a-b; }
+function respuesta(a,b) { return 0; }
+function sumar(a,b) {
+    return a + b;
+}
+
+function Calculator() {
+}
+
+
+
+Calculator.prototype.createButtons = function() {
+    var div = document.getElementById("calc");
+    for (var i=0; i<16; i++) {
+        var btn = document.createElement("BUTTON");
+     
+
+        if (i<10){
+        
+            btn.innerHTML = i;
+            div.appendChild(btn);
+               btn.onclick = function(event) {
+        		var j=i;
+				var h=document.createTextNode(j);
+                div.appendChild(h)
+                
+
+        };
+        }
+        if (i>=10){
+            switch (i){
+                case 10 :
+                	var ope =document.createElement("BUTTON");
+                    ope.innerHTML ="+";
+                    div.appendChild(ope);
+
+                    break;
+                case 11 :
+                	var ope =document.createElement("BUTTON");
+                    ope.innerHTML ="-";
+                    div.appendChild(ope);
+                    break;
+                case 12 :
+                	var ope =document.createElement("BUTTON");
+                    ope.innerHTML ="*";
+                    div.appendChild(ope);
+                    break;
+                case 13 :
+                	var ope =document.createElement("BUTTON");
+                    ope.innerHTML ="/";
+                    div.appendChild(ope);
+                    break;
+                 case 14 :
+                	var ope =document.createElement("BUTTON");
+                    ope.innerHTML ="=";
+                    div.appendChild(ope);
+                    break;
+            }
+            ope.onclick = function (event){
+                var a = 3;
+                var b = 0;
+				 onclick=sumar(a,b)
+               	var c=sumar(a, b);
+               	 		var sumita=document.createTextNode(c);
+                		div.appendChild(sumita);
+                
+        	    switch (i){
+            	    case 10 :
+               	 	 	var c=sumar(a, b);
+               	 		var sumita=document.createTextNode(c);
+                		div.appendChild(sumita);			
+                    	break;
+                	case 11 :
+                		var c=restar(a, b);
+               	 		var sumita=document.createTextNode(c);
+                		div.appendChild(sumita);			
+                    	break;
+                	case 12 :
+                	var c=restar(a, b);
+               	 		var sumita=document.createTextNode(c);
+                		div.appendChild(sumita);			
+                    	break;
+               	 	case 13 :
+                	var ope =document.createElement("BUTTON");
+                    ope.innerHTML ="/";
+                    div.appendChild(ope);
+                    break;
+                 	case 14 :
+                	var ope =document.createElement("BUTTON");
+                    ope.innerHTML ="=";
+                    div.appendChild(ope);
+                    break;
+            }
+               
+        };
+
+        }
+        
+    }
+}
+
+
+function main() {
+  var calc = new Calculator();
+  calc.createButtons();
+  
+}
+    </script>
+</head>
+<body onload="main()">
+    <div id="calc" style="border: 1px solid black; width: 400px;">
+    </div>
+</body>
+</html>
