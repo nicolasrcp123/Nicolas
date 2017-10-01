@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="mejorar.js"> </script>
+    
+    <meta charset="utf-8" />
+    <title>DADO</title>
+<style >
+    
+    table, th, td {
+        
+        border: 1px solid black;
+        background-color: darkslategray;
+        width: 400px;
+        height: 100px;
+        
+    }
+    button {
+        background-color:greenyellow;
+        border:1px solid blue;
+        
+
+    }
+    #col1 {
+        float: left;
+        
+    }
+    #col2 {
+        float: right;
+      
+    }
+    #col3 {
+        text-align:center;
+      
+    }
+    #demo{
+        color:azure;
+        background-color:black;
+    }
+  
+   #dado{
+  
+    width:500px;
+    text-align:center;
+    margin:15px auto;
+    padding:15px;
+    border:1px solid black;
+    border-radius:15px;
+    background:-webkit-radial-gradient(center,circle,yellow,red);
+    
+    
+}
+</style>
+
+</head>
+
+<body >
+    <header id="dado">
+        <span id="titulo">" SIMULACION DE DADOS "</span>
+    </header>
+    <div id="col1">
+        <table>
+
+            <tr>
+                <td id="0"></td>
+                <td id="1"></td>
+                <td id="2"></td>
+
+            </tr>
+            <tr>
+                <td id="3"></td>
+                <td id="4"></td>
+                <td id="5"></td>
+
+            </tr>
+            <tr>
+                <td id="6"></td>
+                <td id="7"></td>
+                <td id="8"></td>
+
+            </tr>
+        </table>
+     
+        <br />
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button onclick="lanzar()" class="btn btn-primary">Lanzar</button>
+
+
+        <br />
+        <br />
+        </div>
+    <div id="col2">
+        <table align="right">
+            <tr>
+                <td id="00"></td>
+                <td id="10"></td>
+                <td id="20"></td>
+
+            </tr>
+            <tr>
+                <td id="30"></td>
+                <td id="40"></td>
+                <td id="50"></td>
+
+            </tr>
+            <tr>
+                <td id="60"></td>
+                <td id="70"></td>
+                <td id="80"></td>
+
+            </tr>
+        </table>
+        <br />
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        <br /><br />
+       
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button onclick="lanzar1()" class="btn btn-primary">Lanzar</button>
+        <br />
+        <br />
+        </div>
+   <div id="col3">
+        <button onclick ="Comparar()" class="btn btn-primary">Resultado de Juego </button>
+
+        <br />
+        <br />
+
+        <h1 id="demo"></h1>
+       </div>
+</body>
+</html>
